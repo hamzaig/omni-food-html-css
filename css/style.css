@@ -6,9 +6,14 @@
   Spacing System(px)
     2-4-8-12-16-24-32-48-64-80-96-128
   Font Weights
-    Default 400
+    Default   400
+    Medium    500
+    Semi-Bold 600
+    Bold      700
   Line Height
-    Default 1
+    Default           1
+    Small             1.05
+    Paragraph Defaut  1.6
 
 -- 02 Colors
   Primary #e67e22
@@ -16,7 +21,9 @@
   Shades  #cf711f
   Accents
   Greys   #555, #333
-  
+-- 03 Border Radius
+  Default: 0.9rem
+
 */
 
 * {
@@ -102,6 +109,46 @@ body {
 
 .logo {
   height: 2.4rem;
+}
+
+/********************************/
+/* NAVBAR */
+/********************************/
+
+.main-nav-list {
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.9rem;
+  color: #fff;
+  background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
 }
 
 /********************************/
